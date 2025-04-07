@@ -35,6 +35,7 @@ The dataset was loaded using `pandas.read_csv()`. Initially, I encountered a `Un
 import pandas as pd
 
 df = pd.read_csv("sales_data_sample.csv", encoding='latin1')
+```
 
 ## 🔍 2. Initial Data Overview
 
@@ -43,7 +44,7 @@ We used `df.info()` and `df.describe()` to explore the data:
 ```python
 df.info()
 df.describe()
-
+```
 ✅ Total Rows: 2823
 
 ✅ Total Columns: 25
@@ -65,7 +66,7 @@ df['POSTALCODE'].fillna('Unknown', inplace=True)
 
 # 'TERRITORY' had 1074 nulls - filled with 'Not Assigned'
 df['TERRITORY'].fillna('Not Assigned', inplace=True)
-
+```
 
 
 🔁 4. Duplicate Rows
