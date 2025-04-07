@@ -72,9 +72,9 @@ df['TERRITORY'].fillna('Not Assigned', inplace=True)
 🔁 4. Duplicate Rows
 Checked for duplicates using:
 
-
-`df.duplicated().sum()`
-
+```python
+df.duplicated().sum()
+```
 ✅ Result: 0 duplicate rows found
 
 ✨ 5. Standardized Text Columns
@@ -84,21 +84,27 @@ To ensure uniformity, converted certain columns to lowercase and removed extra s
 text_cols = ['STATUS', 'COUNTRY', 'TERRITORY', 'DEALSIZE']
 for col in text_cols:
     df[col] = df[col].str.lower().str.strip()
+```
 
 🕒 6. Converted Date Format
 The ORDERDATE column was in string format, so we converted it to datetime:
 
 ```python
 df['ORDERDATE'] = pd.to_datetime(df['ORDERDATE'])
+```
+
 
 🏷️ 7. Renamed Columns
 For better readability and coding convenience, all column headers were renamed:
 
 ```python
 df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+```
+
 
 🔢 8. Fixed Data Types
 Converted necessary columns to proper data types:
+
 ```python
 df['quantityordered'] = df['quantityordered'].astype(int)
 df['msrp'] = df['msrp'].astype(int)
@@ -108,6 +114,7 @@ df['sales'] = df['sales'].astype(float)
 df['qtr_id'] = df['qtr_id'].astype(int)
 df['month_id'] = df['month_id'].astype(int)
 df['year_id'] = df['year_id'].astype(int)
+```
 
 
 ✅ Summary of Changes
