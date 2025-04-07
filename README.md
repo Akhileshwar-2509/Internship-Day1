@@ -8,7 +8,7 @@ This project was carried out as part of my internship task to clean and preproce
 ### 📥 Dataset Source
 The dataset was sourced from Kaggle's repository of publicly available datasets. Here's how I got it:
 
-1. I visited [Kaggle - Sales Data Sample](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data).
+1. I visited [Kaggle - Sales Data Sample](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data ).
 2. I downloaded the CSV file: `sales_data_sample.csv`.
 3. I placed the dataset in my working directory to begin preprocessing.
 
